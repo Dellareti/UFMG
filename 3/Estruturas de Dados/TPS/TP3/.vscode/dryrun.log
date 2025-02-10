@@ -1,0 +1,10 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/italo/Desktop/tp3'
+mkdir -p bin obj
+make.exe: Leaving directory 'c:/Users/italo/Desktop/tp3'
+ 
+make.exe: *** No rule to make target 'obj/main.o', needed by 'bin/tp3.exe'.
+make.exe: *** No rule to make target 'obj/tabela_hash.o', needed by 'bin/tp3.exe'.
+make.exe: *** No rule to make target 'obj/memlog.o', needed by 'bin/tp3.exe'.
+make.exe: *** No rule to make target 'obj/arvore_busca.o', needed by 'bin/tp3.exe'.
+

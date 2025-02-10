@@ -1,0 +1,12 @@
+2 1000 OP
+Giovanni John
+4 1300 HC
+John Maria Thiago Wagner
+1 1700 FH
+Giovanni
+####
+Giovanni 3050
+John 2025
+Wagner 1875
+Thiago 1675
+Maria 1375

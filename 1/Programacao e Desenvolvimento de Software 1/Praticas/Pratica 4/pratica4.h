@@ -1,0 +1,15 @@
+float paraMetrosPorSegundo(float v);
+float areaCirculo(float raio);
+int maior3(int n1,int n2,int n3);
+int ePar(int n );
+int ehDivisivelPor3ou5(int n);
+float pesoIdeal(float h,char sexo);
+int somaImpares(int n);
+double fatorial(int n);
+int somaNumerosDiv3ou5(int n);
+float calculaMedia(int x,int y,int z,int operacao);
+int numerosDivisores(int n);
+int enesimoFibonacci(int n);
+int mdc(unsigned int x,unsigned int y);
+int mmc(unsigned int x,unsigned int y);
+int mdcEmmc(unsigned int x,unsigned int y);

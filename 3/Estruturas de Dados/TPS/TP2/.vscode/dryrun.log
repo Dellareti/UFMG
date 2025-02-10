@@ -1,0 +1,10 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+'\\wsl.localhost\Ubuntu-20.04\home\delareti\trabalhos\analisador'
+CMD.EXE foi iniciado tendo o caminho acima como pasta atual.
+N�o h� suporte para caminhos UNC. Padronizando para pasta do Windows.
+
+make.exe: Entering directory 'C:/Windows'
+make.exe: Leaving directory 'C:/Windows'
+ 
+make.exe: *** No targets specified and no makefile found.  Stop.
+
