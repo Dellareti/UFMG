@@ -108,6 +108,10 @@ O projeto inclui casos de teste para demonstrar o funcionamento, incluindo:
 - Caso de desempate de Full House
 - Verificação de robustez com apostas inválidas
 
+### Demonstração em Vídeo
+
+Você pode [assistir à demonstração](./Teste%20casos.mp4)
+
 ## Autoria
 
 Desenvolvido por Ítalo Dell'Areti como trabalho prático para a disciplina de Algoritmos e Estruturas de Dados II da UFMG.
