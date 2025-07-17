@@ -1,0 +1,62 @@
+Name                                                     Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------------------------------------
+src/flask/__init__.py                                       39      0      0      0   100%
+src/flask/__main__.py                                        2      2      0      0     0%   1-3
+src/flask/app.py                                           404     30    180     18    90%   75-78, 304, 321, 378-383, 399->402, 402->410, 528->527, 541-544, 612-621, 623->631, 628, 721->723, 852, 976, 994-1001, 1072, 1087, 1099->1104, 1261, 1351, 1379, 1525
+src/flask/blueprints.py                                     34      8     10      2    68%   78, 95, 120-128
+src/flask/cli.py                                           428     65    148     19    82%   74->67, 142, 156-163, 181, 423->425, 444-446, 481-482, 502, 509->512, 579->582, 582->585, 593->598, 605, 631->634, 669->676, 695, 745-763, 771, 773->776, 776->exit, 837-838, 954-983, 1009-1045, 1123, 1127
+src/flask/config.py                                        108      2     42      1    98%   37, 367
+src/flask/ctx.py                                           152     20     36      7    85%   62-65, 114, 143, 179-193, 235, 261, 268, 317->320, 350, 413->416, 429, 446
+src/flask/debughelpers.py                                   87     10     36     11    81%   38->44, 65->72, 96, 111, 114, 120, 139->142, 148, 158-159, 166-168, 170->178
+src/flask/globals.py                                        14      0      0      0   100%
+src/flask/helpers.py                                       117      7     34      4    91%   47, 111, 377->380, 606-614
+src/flask/json/__init__.py                                  25      3      8      2    85%   73-74, 135
+src/flask/json/provider.py                                  64      4     16      2    92%   82, 104-105, 121
+src/flask/json/tag.py                                      132      0     20      0   100%
+src/flask/logging.py                                        30      0     12      0   100%
+src/flask/sansio/app.py                                    235      7     66      4    96%   436-439, 493, 566->exit, 820-821, 956->949
+src/flask/sansio/blueprints.py                             226      4     66      8    96%   206->209, 215, 241->exit, 331->334, 354->357, 360, 372, 374
+src/flask/sansio/scaffold.py                               205     10     40      4    93%   218, 262, 282, 743, 778-789
+src/flask/sessions.py                                      123      0     18      0   100%
+src/flask/signals.py                                        13      0      0      0   100%
+src/flask/templating.py                                    110      6     32      8    89%   31->33, 46->48, 77-78, 88, 103->106, 108->106, 114->117, 119->117, 182->185, 202-204
+src/flask/testing.py                                       112      4     32      3    95%   174, 224-225, 251
+src/flask/typing.py                                         22      0      0      0   100%
+src/flask/views.py                                          53      0     20      1    99%   179->exit
+src/flask/wrappers.py                                       85      0     24      0   100%
+tests/conftest.py                                           72      3      8      2    94%   30, 92-93
+tests/templates/template_filter.html                         1      0      0      0   100%
+tests/test_appctx.py                                       143      2      0      0    99%   14, 199
+tests/test_apps/blueprintapp/__init__.py                     7      0      0      0   100%
+tests/test_apps/blueprintapp/apps/__init__.py                0      0      0      0   100%
+tests/test_apps/blueprintapp/apps/admin/__init__.py          9      0      0      0   100%
+tests/test_apps/blueprintapp/apps/frontend/__init__.py       9      0      0      0   100%
+tests/test_apps/cliapp/__init__.py                           0      0      0      0   100%
+tests/test_apps/cliapp/app.py                                2      0      0      0   100%
+tests/test_apps/cliapp/factory.py                            7      0      0      0   100%
+tests/test_apps/cliapp/importerrorapp.py                     2      0      0      0   100%
+tests/test_apps/helloworld/hello.py                          5      1      0      0    80%   8
+tests/test_apps/helloworld/wsgi.py                           1      0      0      0   100%
+tests/test_async.py                                        100     92      0      0     8%   14-145
+tests/test_basic.py                                       1317     14     18      1    99%   33, 43, 47, 74, 84, 623-629, 727-728, 732-733, 1342, 1562->1565, 1654
+tests/test_blueprints.py                                   690      4      4      2    99%   199, 237, 273, 337
+tests/test_cli.py                                          429     25      6      0    93%   96, 105, 123, 527, 538-556, 561-566, 578-581
+tests/test_config.py                                       166      1      2      1    99%   98
+tests/test_converters.py                                    29      0      0      0   100%
+tests/test_helpers.py                                      223     12      2      0    94%   27, 30, 106, 113, 134, 148-150, 153, 167, 232-233
+tests/test_instance_config.py                               56      0      0      0   100%
+tests/test_json.py                                         173     10      8      1    94%   22, 232, 261-267, 336-337
+tests/test_json_tag.py                                      50      0      0      0   100%
+tests/test_logging.py                                       69      0      2      1    99%   32->exit
+tests/test_regression.py                                    21      1      2      1    91%   26
+tests/test_reqctx.py                                       216     43      2      0    80%   68, 72, 151-177, 180-202, 221
+tests/test_request.py                                       50      1      0      0    98%   15
+tests/test_session_interface.py                             17      1      0      0    94%   14
+tests/test_signals.py                                      126      0      0      0   100%
+tests/test_subclassing.py                                   15      0      0      0   100%
+tests/test_templating.py                                   279      0      0      0   100%
+tests/test_testing.py                                      274      2      2      0    99%   192, 209
+tests/test_user_error_handler.py                           203      0      4      0   100%
+tests/test_views.py                                        177      9      0      0    95%   44, 47, 65, 68, 72, 108, 122, 133, 233
+----------------------------------------------------------------------------------------------------
+TOTAL                                                     7758    403    900    103    94%

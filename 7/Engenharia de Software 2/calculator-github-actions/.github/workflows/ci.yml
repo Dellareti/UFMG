@@ -1,0 +1,67 @@
+name: CI - Calculadora Científica
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ['3.9', '3.11', '3.12']
+    
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v4
+    
+    - name: Configurar Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Cache de dependências pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements-dev.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Instalar dependências
+      run: |
+        python -m pip install --upgrade pip
+        # Instalar dependências de desenvolvimento
+        pip install -r requirements-dev.txt
+        # requirements.txt está vazio (projeto usa apenas biblioteca padrão)
+    
+    - name: Executar linter com flake8
+      run: |
+        flake8 src tests main.py --max-line-length=88 --count --show-source --statistics
+        flake8 src tests main.py --max-line-length=88 --count --exit-zero --max-complexity=10 --statistics
+    
+    - name: Executar testes com pytest
+      run: |
+        pytest tests/ -v --cov=src --cov-report=xml --cov-report=html
+    
+    - name: Upload relatório de cobertura
+      uses: actions/upload-artifact@v4
+      if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.11'
+      with:
+        name: coverage-report
+        path: |
+          coverage.xml
+          htmlcov/
+    
+    - name: Upload logs de teste
+      uses: actions/upload-artifact@v4
+      if: failure()
+      with:
+        name: test-logs-${{ matrix.os }}-py${{ matrix.python-version }}
+        path: |
+          *.log
+          test-results/

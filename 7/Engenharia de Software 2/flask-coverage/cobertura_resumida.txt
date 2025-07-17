@@ -1,0 +1,39 @@
+Name                                  Stmts   Miss Branch BrPart  Cover
+-----------------------------------------------------------------------
+src/flask/__main__.py                     2      2      0      0     0%
+src/flask/app.py                        404     30    180     18    90%
+src/flask/blueprints.py                  34      8     10      2    68%
+src/flask/cli.py                        428     65    148     19    82%
+src/flask/config.py                     108      2     42      1    98%
+src/flask/ctx.py                        152     20     36      7    85%
+src/flask/debughelpers.py                87     10     36     11    81%
+src/flask/helpers.py                    117      7     34      4    91%
+src/flask/json/__init__.py               25      3      8      2    85%
+src/flask/json/provider.py               64      4     16      2    92%
+src/flask/sansio/app.py                 235      7     66      4    96%
+src/flask/sansio/blueprints.py          226      4     66      8    96%
+src/flask/sansio/scaffold.py            205     10     40      4    93%
+src/flask/templating.py                 110      6     32      8    89%
+src/flask/testing.py                    112      4     32      3    95%
+src/flask/views.py                       53      0     20      1    99%
+tests/conftest.py                        72      3      8      2    94%
+tests/test_appctx.py                    143      2      0      0    99%
+tests/test_apps/helloworld/hello.py       5      1      0      0    80%
+tests/test_async.py                     100     92      0      0     8%
+tests/test_basic.py                    1317     14     18      1    99%
+tests/test_blueprints.py                690      4      4      2    99%
+tests/test_cli.py                       429     25      6      0    93%
+tests/test_config.py                    166      1      2      1    99%
+tests/test_helpers.py                   223     12      2      0    94%
+tests/test_json.py                      173     10      8      1    94%
+tests/test_logging.py                    69      0      2      1    99%
+tests/test_regression.py                 21      1      2      1    91%
+tests/test_reqctx.py                    216     43      2      0    80%
+tests/test_request.py                    50      1      0      0    98%
+tests/test_session_interface.py          17      1      0      0    94%
+tests/test_testing.py                   274      2      2      0    99%
+tests/test_views.py                     177      9      0      0    95%
+-----------------------------------------------------------------------
+TOTAL                                  7758    403    900    103    94%
+
+25 files skipped due to complete coverage.
